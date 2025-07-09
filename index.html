@@ -193,7 +193,7 @@
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
 
     <script>
-      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzO1MFDSyC-DfxTj4fncwX1RWYaXoBvqJJzU9FKp6Rgk25xiNRhq1qSCUmmNmE6n0lJ/exec";
+      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyFz1r96dfv7MyUaNbQBur1YU8NH-y8oNuh6YNxZveZuAYc0ayXlczA0Q6QW6nD0Eoh/exec";
       let allData = [];
       let userStats = {};
 
@@ -247,7 +247,7 @@
         // Render Halaman Tabel Data
         document.getElementById(
           "content-tabel-data"
-        ).innerHTML = `<div class="card shadow-sm"><div class="card-header bg-white"><h4 class="mb-0">Data Lengkap Kehadiran</h4></div><div class="card-body"><div class="row g-3 mb-3"><div class="col-md-6"><input type="text" id="search-input" class="form-control" placeholder="Live search di semua kolom..."></div><div class="col-md-4"><select id="nim-filter-dropdown" class="form-select"><option value="">Semua Pengguna</option></select></div><div class="col-md-2"><button id="reset-button" class="btn btn-secondary w-100">Reset</button></div></div><div class="table-responsive" style="position: relative;"><div class="table-loading-overlay d-none"><div class="spinner-border text-primary" role="status"></div></div><table class="table table-striped table-hover"><thead><tr><th>Tanggal</th><th>Waktu</th><th>Nama</th><th>NIM</th><th>Fakultas</th><th>Program Studi</th><th>Jenis Kelamin</th></tr></thead><tbody id="data-table-body"></tbody></table></div></div></div>`;
+        ).innerHTML = `<div class="card shadow-sm"><div class="card-header bg-white"><h4 class="mb-0">Data Lengkap Kehadiran</h4></div><div class="card-body"><div class="row g-3 mb-3"><div class="col-md-6"><input type="text" id="search-input" class="form-control" placeholder="Cari..."></div><div class="col-md-4"><select id="nim-filter-dropdown" class="form-select"><option value="">Semua Pengguna</option></select></div><div class="col-md-2"><button id="reset-button" class="btn btn-secondary w-100">Reset</button></div></div><div class="table-responsive" style="position: relative;"><div class="table-loading-overlay d-none"><div class="spinner-border text-primary" role="status"></div></div><table class="table table-striped table-hover"><thead><tr><th>Tanggal</th><th>Waktu</th><th>Nama</th><th>NIM</th><th>Fakultas</th><th>Program Studi</th><th>Jenis Kelamin</th></tr></thead><tbody id="data-table-body"></tbody></table></div></div></div>`;
         populateFilterDropdown(document.getElementById("nim-filter-dropdown"));
         applyFiltersAndRenderTable();
 
